@@ -1,0 +1,111 @@
+.login , .register {
+   
+    position: relative;
+}
+.login::after , .register::after 
+{
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color:#f47457;
+    position: absolute;
+    bottom: 5%;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+.left{
+    padding: 30px 0px 75px 0px;
+}
+ .left .inner{
+    width: 55%;
+    padding: 50px;
+    border-radius: 16px;
+}
+.left .inner h3, #signup , #register{
+    color: #F47458;
+}
+p{
+    color: rgba(0, 0, 0, .5);
+}
+ .left .inner h1{
+    font-size: 56px;
+}
+ .left .inner .input >* {
+    width: 100%;
+    margin: 5px 0;
+    display: block;
+}
+label{
+    font-weight: 500;
+}
+ .left .inner .input input{
+    border: none;
+    border-radius: 5px; 
+    background-color: #FFF6F4;
+    padding: 7px;
+    transition: .1s;
+}
+ .left .inner .input input:focus{
+    outline: 2px solid #F47458;
+}
+#signin , #reg{
+    background-color: #F47458;
+    color: white;
+}
+.right .nav {
+    --bs-nav-link-padding-x: 1rem;
+    --bs-nav-link-padding-y: 0.5rem;
+    --bs-nav-link-color: rgb(0, 0, 0) ;
+    --bs-nav-link-hover-color: rgb(0, 0, 0,.7) ;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    margin-top: 5px;
+}
+.right .nav .nav-link{
+    border: black solid 2px;
+    border-radius: 5px;
+    
+}
+.right .nav .nav-link:hover{
+    border: white solid 2px;
+    background-color:#ffffff;
+    
+}
+ .right{
+   background-color: #FFEDE1;    
+   position: relative;
+   
+    
+}
+ .right img{
+    position: absolute;
+     bottom: 5%; 
+    left: -36.35%;   
+    
+}
+@media screen and (max-width:767px){
+
+    .right{
+        width: 100%;
+        height: 100vh;
+    }   
+    .left .inner{
+        width: 100%;
+    } 
+    .right img{
+    
+         bottom: 10%; 
+        left: 0%;   
+        
+    }
+    nav{
+        position: absolute;
+        top: -100%;
+        left: 70%;
+    }
+}

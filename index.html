@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    
+    <title>Login</title>
+</head>
+<body>
+
+    <section class="login">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-8 left home vh-100 d-none ">
+                    
+                    <div class="inner">
+                        <h2 class="hello"></h2>
+                    </div>
+                </div>
+
+
+                <div class="col-md-8 left enter ">
+                    <div class="inner shadow-sm mx-auto">
+
+                        <h3>Login Here</h3>
+                        <p class=" mt-5">Welcome back !!!</p>
+                        <h1>Sing in</h1>
+                        <div class="input d-flex flex-wrap ">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" placeholder="example@gmail.com">
+                            <p class="text-end">Forgot Password ?</p>
+                            <label for="password">Password</label>
+                            <input type="password" id="password" placeholder="password">
+
+                            <a onclick="enter()" class="btn rounded-5 text-center mx-auto my-3" id="signin">Sign in <i class="fa-solid fa-arrow-right"></i></a>
+                            
+                            <span class=" text-center text-danger d-none">Email or Password wrong please check it and try again</span>
+                            
+                            <p class="text-center">I don’t have an account ? <a href="./regstration.html" id="signup"> Sign up</a></p>
+                        </div>
+
+
+
+
+
+                    </div>
+                </div>
+                <div class="col-md-4 right">
+                    <nav class=" d-none">
+                        <ul class="nav nav-pills justify-content-end ">
+                            <li class="nav-item">
+                              <a class="nav-link " aria-current="page" onclick="swipe()">Log out</a>
+                            </li>
+                          </ul>
+                    </nav>
+                    <div class="inner">
+                        <img src="./Images/Group 2014.jpg" alt="" class="w-100">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    
+    <script src="./index.js"></script>
+    <script src="./all.min.js"></script>
+</body>
+</html>

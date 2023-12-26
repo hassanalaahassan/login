@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Registration</title>
+</head>
+<body>
+
+    <section class="register">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-8 left">
+                    <div class="inner shadow-sm  mx-auto">
+
+                        <h3>Register Now</h3>
+                        <p class=" mt-4">Welcome</p>
+                        <h1>Register</h1>
+                        <div class="input d-flex flex-wrap ">
+                            <label for="fnamereg">Full Name</label>
+                            <input type="text" id="fnamereg" placeholder="Full Name">
+
+
+
+
+                            <span class="text-danger d-none">Name must start with a capital letter and at least contain 3 letters</span>
+
+
+
+
+
+                            <label for="emailreg">Email</label>
+                            <input type="email" id="emailreg" placeholder="example@gmail.com">
+
+                            <span class="text-danger d-none exist">This e-mail is already exist please use another one</span>
+
+                            <span class="text-danger d-none">E-mail not less 3 letter and must contain @</span>
+                            
+                            
+                            <label for="passwordreg">Password</label>
+                            <input type="password" id="passwordreg" placeholder="password">
+                            
+                            <span class="text-danger d-none">password has a minimum of 6 characters, at least 1 uppercase letter, 1 lowercase letter, and 1 number with no spaces</span>
+
+                            <a onclick="addToLocal()" class="btn rounded-5 text-center mx-auto my-3" id="reg">Registar <i class="fa-solid fa-arrow-right"></i></a>
+                            
+                            <span class=" text-success text-center d-none">Registration Success</span>
+
+                            <p class="text-center">Now you will have an account in our platform!! <a href="./index.html" id="register">Go Login</a></p>
+                        </div>
+
+                        
+
+
+
+                    </div>
+
+                </div>
+                
+                <div class="col-md-4 right">
+                    <div class="inner">
+                        <img src="./Images/Group 2014.jpg" alt="" class="w-100">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <script src="./index.js"></script>
+    <script src="./all.min.js"></script> 
+</body>
+</html>
